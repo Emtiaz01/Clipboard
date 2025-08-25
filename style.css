@@ -1,315 +1,146 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
-  margin: 0;
   font-family: 'Arial', sans-serif;
-  background-image: url('./images/bg-header-desktop.png');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: hsl(0, 0%, 99%);
+  background: hsl(0, 0%, 99%) url('./images/bg-header-desktop.png') no-repeat top/100%;
+  color: hsla(0, 6%, 15%, 0.9);
+  text-align: center;
+  line-height: 1.6;
 }
 
-/* This part is for Container1*/
-.logo {
-    margin-top: 100px;
-    justify-self: center;
-  width: 150px;
-  height: auto;
-}
-.Header p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: hsla(0, 6%, 15%, 0.899);
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 0;
-    margin-top: 20px;
-    font-weight: bold;
-}
-.description p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: hsla(0, 6%, 15%, 0.899);
-    font-size: 0.7rem;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    line-height: 1.5;
-    opacity: 0.3;
-}
-.button {
+/* Sections default: column */
+section {
+  padding: 3rem 1.5rem;
   display: flex;
-  justify-content: center;
-  margin-top: 1rem;
+  flex-direction: column;
+  align-items: center;
 }
 
+h1, h2, h3 {
+  font-family: 'Arial', sans-serif;
+  margin: 1rem 0 0.5rem;
+  font-weight: bold;
+}
+
+
+ .description {
+  font-family: 'Arial', sans-serif;
+  max-width: 600px;
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
 button {
-  padding: 0.6rem 1.5rem;
-  margin: 0.8rem;
+  padding: 0.8rem 2rem;
+  margin: 0.5rem;
   border-radius: 25px;
   border: none;
   cursor: pointer;
   font-size: 1rem;
-  transition: all 0.3s ease;
-
+  transition: 0.3s ease;
+  width: 90%;
+  max-width: 250px;
 }
 
 .primary-button {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 3px 3px 3px 3px;
-  background-color: #26baa4;
+  background: #26baa4;
   color: #fff;
-   box-shadow: 0 4px 8px #26baa4
+  box-shadow: 0 4px 8px #26baa4;
 }
-
-.primary-button:hover {
-  background-color: #20a08c;
-}
+.primary-button:hover { background: #20a08c; }
 
 .secondary-button {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 3px 3px 3px 3px;
-  background-color: #6174ff;
+  background: #6174ff;
   color: #fff;
-  box-shadow: 0 4px 8px #6174ff
+  box-shadow: 0 4px 8px #6174ff;
 }
+.secondary-button:hover { background: #4d5ed9; }
 
-.secondary-button:hover {
-  background-color: #4d5ed9;
-}
-
-/* This part is for Container2 */
-.Header2{
-    padding-top: 80px;
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: hsla(0, 6%, 15%, 0.899);
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 0;
-    margin-top: 20px;
-    font-weight: bold;
-}
-.details2{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: hsla(0, 6%, 15%, 0.899);
-    font-size: 0.7rem;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    line-height: 1.5;
-    opacity: 0.3;
-}
-
-/* This part is for Container3 */
-.container3 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start; 
-  justify-content: center;
-  gap: 2rem; 
-  margin-top: 3rem; 
-}
-.desktop img {
-  width:700px;
-  height: 500px;
-  margin-top: 20px;
-  margin-right: 100px;
-}
-.Texts {
-  max-width: 400px;
-  text-align: justify;
-}
-
-.Header3, .Header4, .Header5,
-.details3, .details4, .details5 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: hsla(0, 6%, 15%, 0.899);
-    margin-top: 10px;
-    line-height: 1.5;
-}
-
-.Header3, .Header4, .Header5 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.details3, .details4, .details5 {
-    font-size: 0.9rem;
-    opacity: 0.7;
-    text-align: justify; 
-}
-
-/* This part is for Container4 */
-.Header6 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: hsla(0, 6%, 15%, 0.899);
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 200px;
-    font-weight: bold;
-}
-.details6 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: hsla(0, 6%, 15%, 0.899);
-    font-size: 0.7rem;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    line-height: 1.5;
-    opacity: 0.3;
-}
-.devices img {
-  width:700px;
-  height: 450px;
-  margin-left: 400px;
-}
-/* This part is for Container5 */
-.Header7 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: hsla(0, 6%, 15%, 0.899);
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 100px;
-    font-weight: bold;
-}   
-.details7 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: hsla(0, 6%, 15%, 0.899);
-    font-size: 0.7rem;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    line-height: 1.5;
-    opacity: 0.3;
-}
-/* This part is for Container6 */
-.container6 {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; 
-  gap: 3rem; 
-  margin-top: 3rem;
-  text-align: center; 
-}
-
-
-.content, .Content2, .content3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;  
-  max-width: 250px;    
-}
-
-.content img,
-.Content2 img,
-.content3 img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 1rem; 
-}
-
-.Header8, .Header9, .Header10 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: hsla(0, 6%, 15%, 0.899);
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 0.5rem 0;
-  text-align: center;
-}
-
-
-.details8, .details9, .details10 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: hsla(0, 6%, 15%, 0.899);
-  font-size: 0.85rem;
-  line-height: 1.5;
-  opacity: 0.6;
-  text-align: center;
-}
-
-/*This is the part for barnds*/
-.container7 {
-  display: flex;
-  justify-content: center;  
-  align-items: center;
-  flex-wrap: wrap;          
-  gap: 3rem;                 
-  margin-top: 3rem;
-}
-
-.brand, .brand2, .brand3, .brand4, .brand5 {
-  width: 120px;              
-  height: 60px;
-  display: flex;
-  justify-content: center;  
-  align-items: center;     
-}
-
-.brand img, .brand2 img, .brand3 img, .brand4 img, .brand5 img {
-  max-width: 100%;          
-  max-height: 100%;
-  object-fit: contain;  
-}
-/*This is the part for container 8*/
-.container8 p {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: hsla(0, 6%, 15%, 0.899);
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 40px;  
-  margin-bottom: 10px; 
-  font-weight: bold;
-}
-
-.details11 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: hsla(0, 6%, 15%, 0.899);
-  font-size: 0.8rem;   
-  text-align: center;
-  line-height: 1.5;
-  opacity: 0.6;     
-  margin-top: 5px;    
-}
 .button-group {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 0.5rem;      
-  margin-top: 20px; 
-  height: auto;      
-}
-footer {
-  background-color: #f8f8f8; /* light background */
-  padding: 20px 0;
+  gap: 0.8rem;
 }
 
-.footer {
+/* Images */
+.logo { margin: 2rem auto 1rem; width: 120px; }
+.responsive-img { max-width: 700px; width: 100%; margin: 1.5rem 0; }
+.icon { width: 50px; margin: 1rem 0; }
+
+/* Brands */
+.brands { flex-direction: column; gap: 2rem; }
+.brands img { max-width: 150px; margin: 0 auto; }
+
+/* Footer */
+footer {
+  background: #f8f8f8;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 10px; /* space between text and icons */
+  gap: 1.5rem;
 }
 
-.footer p {
-  font-family: 'Trebuchet MS', Arial, sans-serif;
-  font-size: 0.9rem;
-  color: #666;
-  margin: 0;
-  text-align: center;
+.footer-logo { width: 60px; }
+.footer-links { display: flex; flex-direction: column; gap: 0.8rem; }
+.footer-links a {
+  text-decoration: none;
+  color: hsla(0, 6%, 15%, 0.9);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
-.social-icons {
-  display: flex;
-  gap: 15px; /* space between social icons */
-}
+.footer-links a:hover { opacity: 1; }
+.social-icons { display: flex; gap: 1rem; }
+.social-icons img { width: 25px; cursor: pointer; transition: transform 0.3s ease; }
+.social-icons img:hover { transform: scale(1.1); }
 
-.social-icons img {
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
+/* -------------------------------
+   💻 Desktop Layout (>=1024px)
+   ------------------------------- */
+@media (min-width: 1024px) {
+  body { text-align: left; }
 
-.social-icons img:hover {
-  transform: scale(1.1);
-}
+  /* Hero stays centered */
+  .hero { text-align: center; }
 
+  /* Features: image left, text right */
+  .features {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .features img { max-width: 50%; }
+  .features .text { max-width: 400px; }
+
+  /* Devices: centered image below text */
+  .devices { flex-direction: column; text-align: center; }
+
+  /* Tools: 3 in a row */
+  .tools { flex-direction: row; justify-content: center; gap: 2rem; }
+  .tools div { max-width: 300px; text-align: center; }
+
+  /* Brands row */
+  .brands { flex-direction: row; justify-content: space-around; align-items: center; }
+
+  /* Buttons row */
+  .button-group { flex-direction: row; justify-content: center; }
+
+  /* Footer row */
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-links { flex-direction: row; gap: 2rem; }
+}
